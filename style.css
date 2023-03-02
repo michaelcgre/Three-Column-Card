@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  @media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+  }
+
+/* Assing color and radius to each box */
+  .sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
+  }
+
+  @media (min-width: 768px) {
+    .sedans {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3%;
+    }
+  }
+
+  .sedans button {
+    color: hsl(31, 77%, 52%);
+  }
+
+  .suvs {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .suvs button {
+    color: hsl(184, 100%, 22%);
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 3%;
+    border-bottom-left-radius: 3%;
+  }
+
+  @media (min-width: 768px) {
+    .luxury {
+        border-top-right-radius: 3%;
+        border-bottom-left-radius: 0;
+    }
+  }
+
+  .luxury button {
+    color: hsl(179, 100%, 22%);
+  }
+
+/* Contents inside box */
+  .category {
+    color: white;
+    margin: 0 1rem;
+    padding: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .category {
+        margin: 0 0;
+    }
+  }
+
+  .category h1 {
+    font-size: 2.5rem;
+    font-family: "Big Shoulders Display";
+  }
+
+  .category p {
+    opacity: .9;
+    line-height: 2rem;
+    width: 26ch;
+    font-family: "Lexend Deca";
+  }
+
+  @media (min-width: 768px) {
+    .category p {
+        width: 23ch;
+    }
+  }
+
+  .category button {
+    background-color: white;
+    padding: .8rem 2rem;
+    border-radius: 10% / 50%;
+    border: 2px solid transparent;
+    font-family: "Lexend Deca";
+    font-weight: 600;
+  }
+
+  @media (min-width: 768px) {
+    .category button {
+        margin-top: 3rem;
+    }
+  }
+
+  .category button:hover {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+/* Bottom */
+  .attribution {
+    margin-top: 1rem;
+  }
